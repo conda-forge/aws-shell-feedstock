@@ -1,20 +1,20 @@
 {% set name = "aws-shell" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2044b0ef78c7542c392f2cee4b74a4439545c63dda0a3e28b712fff53e8e5823
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fd1699ea5f201e7cbaacaeb34bf1eb88c8fe6dc6b248bce1b3d22b3e099a41e5
 
 build:
   number: 0
   entry_points:
     - aws-shell = awsshell:main
     - aws-shell-mkindex = awsshell.makeindex:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -37,12 +37,12 @@ test:
     - aws-shell --help
 
 about:
-  home: "https://github.com/awslabs/aws-shell"
-  license: Apache Software
+  home: https://github.com/awslabs/aws-shell
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
-  summary: "An integrated shell for working with the AWS CLI"
-  dev_url: "https://github.com/awslabs/aws-shell"
+  summary: An integrated shell for working with the AWS CLI
+  dev_url: https://github.com/awslabs/aws-shell
 
 extra:
   recipe-maintainers:

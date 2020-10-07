@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://github.com/awslabs/aws-shell
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
   summary: An integrated shell for working with the AWS CLI

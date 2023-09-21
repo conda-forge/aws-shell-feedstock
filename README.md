@@ -1,11 +1,11 @@
-About aws-shell
-===============
+About aws-shell-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-shell-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awslabs/aws-shell
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-shell-feedstock/blob/main/LICENSE.txt)
 
 Summary: An integrated shell for working with the AWS CLI
 

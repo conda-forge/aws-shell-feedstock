@@ -10,7 +10,7 @@ source:
   sha256: fd1699ea5f201e7cbaacaeb34bf1eb88c8fe6dc6b248bce1b3d22b3e099a41e5
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - aws-shell = awsshell:main
     - aws-shell-mkindex = awsshell.makeindex:main
